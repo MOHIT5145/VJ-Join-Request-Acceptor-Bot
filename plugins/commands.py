@@ -17,7 +17,7 @@ async def start_message(c,m):
         await db.add_user(m.from_user.id, m.from_user.first_name)
         await c.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
     await m.reply_photo(f"https://te.legra.ph/file/119729ea3cdce4fefb6a1.jpg",
-        caption=f"<b>Hello {m.from_user.mention} 👋\n\nI Am Join Request Acceptor Bot. Hello {first}\n\nJOIN NOW 👉 @motulinks\nJOIN NOW 👉 @motumoviess - /accept</b>",
+        caption=f"<b>Hello {m.from_user.mention} 👋\n\nI Am Join Request Acceptor Bot.\n\nJOIN NOW 👉 @motulinks\nJOIN NOW 👉 @motumoviess - /accept</b>",
         reply_markup=InlineKeyboardMarkup(
             [[
                 InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/motulinks')
